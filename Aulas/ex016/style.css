@@ -1,0 +1,35 @@
+@charset "UTF-8"; /*Esta regra garante que eu não vou ter problemas com caracteres especiais*/
+
+*{
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    /*linear-gradient(direção do degradee, cor inicial,cor final,)*/
+    background-image: linear-gradient(to right ,#3F7C85 ,#00CCBF,#72F2EB)
+}
+
+main{
+    background-color: white;
+    border-radius:15px ; /*Torna a borda mais arredondada*/
+    box-shadow: 5px 5px 15px #2e3131; /*Cria uma sombra onde tem os seguintes parâmetros:display:
+    quanto vai para o lado, quanto vai para baixo, quanto a sombra vai espalhar, qual a cor ou transparência*/ 
+    width: 600px; /*Largura de 600 pixeis*/
+    padding: 10px;/* Aumentmos ligeiramente o preeenchimento*/
+    margin: auto; /*Margem automatica para garantir o conteudo fique sempre centralizado*/
+}
+
+h1{
+    color: #747E7E;
+    text-align: center; /*Alinhamos o título da página no centro*/
+    text-shadow: 1px 1px 2px #747e7e1f;
+}
+
+h2{
+    color: #FF5F5D;
+}
+
+p{
+    text-align: justify;
+}

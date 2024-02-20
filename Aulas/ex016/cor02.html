@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *
+        {
+            height: 100%; /*Vamos utilizar a altura total do site*/
+        }
+        
+        body
+        {
+            /*background-color: rgb(80,200,236); /*uma cor para o site inteiro*/
+            background-image: linear-gradient(to right, #8B03FA 20%,#C301EB,#FC00D9,#FF054B,#FFC400); /*Um degradee linear */
+            /*background-image: radial-gradient(circle ,#8B03FA,#C301EB,#FC00D9,#FF054B,#FFC400) /*degradee radial;*/
+            background-attachment: fixed; /*Desta forma o degradee fica fixo no body*/
+        }
+    </style>
+</head>
+<body>
+        <h1>Testando Gradiente</h1>
+</body>
+</html>

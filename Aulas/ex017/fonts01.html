@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts em CSS</title>
+    <style>
+        body
+        {
+            font-family: 'work Sans',Arial, Helvetica, sans-serif; /*Caso ele não encontre
+            o font-family Arial, ele vai procurar Helvetica e por ai fora*/
+            
+            /*As categorias principais na tipografia são: serif(com serifa), san-serif(sem serifa), 
+            monospace(monoespaço) e display(muito utilizado no cinema e em ambientes festivos)
+            Lembrando que as categorias devem ser compativeis com a familia da fonte*/
+
+            /*
+            Medidas Absolutas: 
+            cm(centimetros),mm(milimetros),in(inches ou polegadas),px(pixeis),
+            pt(pontos),pc(paicas). Os ultimos dois são uilizados em tipografia de papel
+            e não recomendados para mostrar conteudo na web
+            
+            Medidas Relativas:
+            em(tamanho letra maiuscula), ex(tamanho letra  minuscula),
+            rem(em da fonte configurada no body),vw(view-weidth é percentagem da
+            largura da tela), vh(view-hight é percentagem da altura da tela)         
+            */
+            /*Recomendações da W3C: Para medida de fonte é recomendado px e em*/
+            
+            /*Tamo da fonte*/
+            font-size: 1em; /*16px é igual a 1em. São as unidades de medida padrão*/
+            
+            /*weigth: peso(letra clara ou escura) 
+            heigth: altura*/
+            
+            /*font-weight:lighter;*/
+            /*leighter normal bold bolder*/
+            /*També podemos inserir entre 100 e 900*/
+        
+            /*font-style: italic;*/
+            /*Podemos escolher o estilo do texto*/
+
+            /*text-decoration: underline;*/
+            /*Podemos adicionar uma decoração ao texo como sublinhado*/
+
+            /*IMPORTANTE: Todas as configurações que fizemos aqui em cima
+            DEVEM ser suportadas pela família da fonte que foi escolhida*/
+        }
+
+        h1{
+            font-family: 'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            text-decoration:wavy;
+
+            /*shorthand
+            
+            font-style -> font-weight -> font-size -> font-family*/
+
+            font: italic bolder 3em 'work Sans' ,sans-serif;
+            
+            
+        }
+
+        h2
+        {
+            font: bold 2em 'work Sans';
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit unde nam distinctio reprehenderit praesentium eaque, perspiciatis aliquid suscipit laboriosam, rerum repellat autem, quos veritatis esse nemo tenetur necessitatibus sed.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti in sunt asperiores officia atque! Aliquam cupiditate, possimus repellat delectus harum nesciunt adipisci veritatis, omnis qui nihil quaerat earum tenetur hic?</p>
+</body>
+</html>

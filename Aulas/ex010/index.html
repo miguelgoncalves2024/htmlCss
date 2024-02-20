@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhar com links</title>
+</head>
+<body>
+    <h1>Utilizando links externos</h1>
+    <p>Podes acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf"
+        target="_blank" rel="external"> <!--Utiliza sempre o target igual a blank e o rel igual a external-->
+        repositório público no Github</a></p>
+    <p>Pode também acessar o meu <a href="https://www.youtube.com/@CursoemVideo">canal no youtube</a></p>
+
+    <h2>Usando links internos</h2><!--Vai ser um link para uma página interna-->
+    <p><a href="pag.html" target="_self" rel="next">Clica aqui</a> para acederes a uma página interna</p>
+        <!--Aqui nos metemos o rel=next para indicar ao motor de busca
+        que se trata de um sistema de navegação-->
+        <p><a href="Noticias/pag.html"rel="next">Clica aqui</a> para acederes á página de notícias</p>        
+
+    <h1>Links para downloads</h1>
+        
+        <ul>
+            <li><a href="Livro/meulivro.pdf" target="_blank" rel="external" download="meulivro.pdf"
+                type="aplication/pdf">Baixar o livro PDF</a>
+                <!--Para explicar ao motor de busca que estamos a disponibiizar
+                um ficheiro pdf para download. Nós utilizamos o type="aplication/pdf"
+                que corresponde ao metatype do formato de PDF segundo o site iana.org-->
+            <li><a href="Livro/meulivro.zip" target="_blank" rel="external" download="meulivro.zip" type="aplication/zip">
+                Livro Compactado
+            </a>
+        </ul>
+        
+    </body>
+</html>

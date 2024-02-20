@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /*
+            id = #
+            class = .
+            pseudo-class = :
+            pseudo-element = ::
+            children = >
+        */
+
+        a:visited{
+            color:red;
+            
+        }
+
+        a:hover{/*Quando passo o mouse no link*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a::after{ /*Depois de eu clicar no link*/
+            content: "^.^";
+        }
+
+        a:active{ /*Quando clico no link*/
+            color: yellow;
+        }
+
+        a::before{ /*Antes de eu clicar no link*/
+            color: brown;
+        }
+
+    </style>
+    <title>Links</title>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="#" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="#">Canal do Youtube</a></li>
+        <li> <a href="#">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tenta abrir este site em vários dispositivos diferentes <br>
+    ou simplesmente aumente e diminua o tamanho do seu anvegador</p>
+
+    <picture><!--Permite criar uma imagem com várias fontes-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <!--A tag <source> permite trocar uma imagem por outra caso se verifique
+        que a janela do browser diminui o seu comprimento para
+    um valor menor que 1000-->
+        <!--IMPORTANTE: Para isto funcionar bem, o source da imagem pequena deve ficar por cima do source da imagem média-->
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>  
+
+    <h1>Reproduzir Audio</h1>
+    <p>Vamos aprender a reproduzir audio</p>
+    
+    <!--<audio src="media/musica.mp3" controls autoplay></audio>-->
+    <!--Utilizando a tag audio nós conseguimos reproduzir audio no nosso site-->
+    <!--É importante utilizar as props controls e autoplay-->
+    <!--Atenção que nem todos os browsers permitem alguns formatos de audio-->
+    <!--Formatos de Audio: MP3, WAV, OGG-->
+
+
+    <!--Esta é outra forma de representar audio no site de forma um pouco mais otimizada-->
+    <audio preload="metadata" autoplay controls loop> 
+        <!--Utiliza o preload=metadata para carregar apenas informações do ficheiro -->
+        <source src="media/musica.mp3" type="audio/mpeg" >
+        <source src="media/musica.ogg" type="audio/ogg">
+        <source src="media/musica.wav" type="audio/wav">
+        <p>Infelizmente o teu site não consegue reproduzir audio
+            <a href="media/musica.mp3"> Clique aqui para baixar o ficheiro de audio</a>
+        </p>
+    </audio>
+
+    <!--Para video também temos os problemas de compatibilidade-->
+    <!--Fomatos de video: MP4,M4V,WEBM,OGV-->
+
+
+</body>
+</html>
